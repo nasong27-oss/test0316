@@ -80,7 +80,7 @@ export function BookingForm({ mode, slot, booking, onCreate, onUpdate, onClose }
         <select
           value={endTime}
           onChange={e => setEndTime(e.target.value)}
-          className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-olive-700 focus:outline-none focus:ring-1 focus:ring-olive-600"
         >
           {endTimeOptions.map(t => (
             <option key={t} value={t}>{t}</option>

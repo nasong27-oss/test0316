@@ -37,7 +37,7 @@ export function WeeklyCalendar() {
     setModal(m => ({ ...m, mode: 'edit' }));
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50">
+    <div className="flex flex-col h-screen bg-olive-50">
       <WeekHeader weekLabel={weekLabel} offset={offset} onPrev={goPrev} onNext={goNext} onToday={goToday} />
 
       {/* Grid header: day + room names */}
@@ -52,7 +52,7 @@ export function WeeklyCalendar() {
               <div key={day.toISOString()} className="flex-1 min-w-0 border-r">
                 <div className={clsx(
                   'text-center text-xs font-semibold py-1 border-b',
-                  today ? 'text-blue-600 bg-blue-50' : 'text-gray-600',
+                  today ? 'text-olive-800 bg-olive-100' : 'text-gray-600',
                 )}>
                   {formatDayLabel(day)}
                 </div>
@@ -60,8 +60,8 @@ export function WeeklyCalendar() {
                   {ROOMS.map(room => (
                     <div key={room.id} className={clsx(
                       'flex-1 text-center text-xs py-1 font-medium border-r last:border-r-0',
-                      today ? 'bg-blue-50' : 'bg-gray-50',
-                      room.id === 'lab5' ? 'text-blue-700' : 'text-emerald-700',
+                      today ? 'bg-olive-100' : 'bg-olive-50',
+                      room.id === 'lab5' ? 'text-olive-800' : 'text-warm-700',
                     )}>
                       {room.label}
                     </div>

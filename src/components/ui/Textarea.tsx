@@ -13,7 +13,7 @@ export function Textarea({ label, error, id, ...props }: TextareaProps) {
       <textarea
         id={inputId}
         rows={3}
-        className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 resize-none"
+        className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-olive-700 focus:outline-none focus:ring-1 focus:ring-olive-600 resize-none"
         {...props}
       />
       {error && <p className="text-xs text-red-500">{error}</p>}

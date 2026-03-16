@@ -13,6 +13,6 @@ export const STORE_VERSION = 1;
 export const SLOT_HEIGHT = 48;     // px per 30-min slot
 
 export const ROOM_COLORS: Record<string, { bg: string; border: string; text: string; hover: string }> = {
-  lab5: { bg: 'bg-blue-100', border: 'border-blue-400', text: 'text-blue-900', hover: 'hover:bg-blue-50' },
-  lab6: { bg: 'bg-emerald-100', border: 'border-emerald-400', text: 'text-emerald-900', hover: 'hover:bg-emerald-50' },
+  lab5: { bg: 'bg-olive-100', border: 'border-olive-700', text: 'text-olive-950', hover: 'hover:bg-olive-50' },
+  lab6: { bg: 'bg-warm-100', border: 'border-warm-700', text: 'text-olive-950', hover: 'hover:bg-warm-50' },
 };
