@@ -13,7 +13,9 @@ export function useBookings() {
   }, []);
 
   useEffect(() => {
-    saveBookings(bookings);
+    if (typeof window !== 'undefined') {
+      saveBookings(bookings);
+    }
   }, [bookings]);
 
   const createBooking = useCallback((data: Omit<Booking, 'id' | 'createdAt'>): string | null => {
